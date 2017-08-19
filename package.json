@@ -1,0 +1,64 @@
+{
+  "name": "express-atlas",
+  "version": "1.0.10",
+  "description": "A simple routing wrapper for Express built on directory pattern recognition with easy import of mongoose models",
+  "main": "dist/core.js",
+  "scripts": {
+    "dev": "concurrently --kill-others \"better-npm-run dev\"",
+    "dev-test": "better-npm-run dev-test",
+    "build": "npm run compile"
+  },
+  "betterScripts": {
+    "dev": {
+      "command": "node --trace-warnings ./bin.js",
+      "env": {
+        "NODE_PATH": "./src",
+        "NODE_ENV": "development"
+      }
+    },
+    "dev-test": {
+      "command": "node --trace-warnings ./bin/test",
+      "env": {
+        "NODE_ENV": "./src",
+        "NODE_ENV": "development"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atlasjs/core.git"
+  },
+  "keywords": [
+    "express",
+    "routing",
+    "express",
+    "route",
+    "wrapper",
+    "express",
+    "wrapper",
+    "directory",
+    "routing"
+  ],
+  "author": "Marcus S. Abildskov <marcussa2000@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atlasjs/core/issues"
+  },
+  "homepage": "https://github.com/atlasjs/core#readme",
+  "dependencies": {
+    "express": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "*",
+    "babel-core": "*",
+    "babel-plugin-add-module-exports": "*",
+    "babel-preset-es2015": "*",
+    "babel-preset-react": "*",
+    "babel-preset-stage-0": "*",
+    "babel-register": "*",
+    "express": "*",
+    "nodemon": "*",
+    "mongoose": "*",
+    "cross-env": "*"
+  }
+}
